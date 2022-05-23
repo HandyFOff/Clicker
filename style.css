@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-image: url('https://img.freepik.com/free-vector/sky-with-clouds_1270-480.jpg?w=1380');
+    background-size: cover;
+}
+
+.container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counter {
+    font-size: 60px;
+    margin: 40px 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.block_c {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.info {
+    float: right;
+}
+
+.phone {
+    margin: 0 200px;
+}
+
+.info_table {
+    border: #000 6px solid;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+tr, td {
+    border: #000 3px solid;
+    text-align: center;
+    font-size: 40px;
+}
+
+.buff {
+    font-size: 40px;
+    background-color: rgb(113, 200, 96);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #d6e9c6;
+    margin: 20px 0;
+}
+
+.bonus {
+    font-size: 40px;
+    background-color: rgb(203, 196, 61);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #d6e9c6;
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+}
