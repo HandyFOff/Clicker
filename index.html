@@ -2,38 +2,62 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
   <div class="wrapper">
-    <div class="container">
-      <div class="block_c">
-        <div class="counter">Колличество кликов: 0</div>
+    <header class="header">
+      <div class="logo">
+        <span>HandyClick</span>
       </div>
-      <img src="phone.png" class="phone" draggable="false" alt="phone" width="350" height="660">
+      <div class="settings open-popup">
+        <img src="assets/img/settings.png" alt="" width="55" height="55">
+      </div>
+      <div class="popup__bg"> 
+        <div class="popup">
+          <div class="header-popup">
+            <span>SETTINGS</span>
+            <div class="close-popup"></div>
+          </div>
+          <!-- <div class="sound">
+            <span>Sound:</span>
+            <div></div>
+          </div> -->
+          <div class="music">
+            <span>Music:</span>
+            <audio controls>
+              <source src="assets/music/piglins.mp3" type="audio/mp3">
+              <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+            </audio>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="da">
+        <div class="block_c">
+          <div class="counter">Колличество кликов: 0</div>
+        </div>
+      </div>
+      <img src="assets/img/phone.png" class="phone" draggable="false" alt="phone" width="330" height="600">
       <div class="info">
-        <table class="info_table">
-          <thead>
-            <tr>
-              <td>50 clicks</td>
-              <td>150 clicks</td>
-              <td>500 clicks</td>
-              <td>1000 clicks</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>+2 clicks</td>
-              <td>+3 clicks</td>
-              <td>+4 clicks</td>
-              <td>+5 clicks</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="info-head">
+          <span>INFO</span>
+        </div>
+        <div class="upgrades">
+
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="game.js"></script>
-  <script src="check_count.js"></script>
+  <!-- game scripts -->
+  <script src="scripts/handler.js"></script>
+  <script src="scripts/game.js"></script>
+  <script src="scripts/check_count.js"></script>
+  <script src="scripts/sounds.js"></script>
+
+  <!-- DEBUG -->
+  <script src="debug/debug_tool.js"></script>
+
 </body>
 </html>

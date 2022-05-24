@@ -1,0 +1,39 @@
+<-- HandyF's Clicker -->
+
+    This is my first HTML and Javascript clicker. Gameplay clicker:
+    click on the phone and earn clicks. For clicks, you can buy an
+    improvement in the form of an increase in clicks. You can also
+    buy passive income in the form of 1 click per second for clicks.
+    There will be more updates, all info on my git hub :D
+
+<-- Gameplay clicker -->
+
+    · Click on the phone 
+    · Earn clicks to buy upgrades
+    · Cooming soon...
+
+<-- Upgrades -->
+
+    # CLICKS PER CLICK
+    · +2 clicks per click : cost 50 clicks
+    · +3 clicks per click : cost 150 clicks
+    · +4 clicks per click : cost 500 clicks
+    · +5 clicks per click : cost 1000 clicks
+    · Cooming Soon...
+
+    # PASSIVE CLICKS
+    · 1 click per second : cost 200 clicks
+    · 2 clicks per second : cost 750 clicks
+    · Cooming Soon...
+
+    # Cooming Soon...
+
+<-- Other INFO -->
+
+    # Social Media
+    · VK: https://vk.com/handyf
+    · GitHub: @HandyOff
+    · Discord: Handy#9700
+    · Cooming Soon...
+
+<-- THE END -->

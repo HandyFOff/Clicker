@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+
+body {
+    font-family: Roboto;
+    margin: 40px 0 0 0;
+    padding: 0;
+    user-select: none;
+    background-image: url('https://img.freepik.com/free-vector/sky-with-clouds_1270-480.jpg?w=1380');
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings {
+    width: 50px;
+    height: 50px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.logo {
+    margin: 0px 0px 0px 50px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 15px;
+}
+
+.logo > span {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.counter {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+.block_c {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 1000px;
+    display: inline-block;
+}
+
+.da {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.info {
+    border-radius: 15px;
+    background-color: #fff;
+    height: 600px;
+    width: 580px;
+    float: right;
+    margin-right: 15px;
+}
+
+.info-head {
+    background-color: rgb(156, 156, 156);
+    height: 60px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-head > span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 8px;
+}
+
+.phone {
+    transition: .5s ease;
+    cursor: pointer;
+    margin-left: 1.1em;
+    display: inline-block;
+}
+
+.info_table {
+    border: #000 6px solid;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+tr, td {
+    border: #000 3px solid;
+    text-align: center;
+    font-size: 40px;
+}
+
+.buff {
+    font-size: 30px;
+    background-color: rgb(113, 200, 96);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #d6e9c6;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.bonus {
+    font-size: 24px;
+    background-color: rgb(203, 196, 61);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #d6e9c6;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+button {
+    display: block;
+}
+
+.phone_anim {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.bonus_block {
+    display: inline-block;
+    border: 2px solid #000;
+}
+
+.upgrades {
+    text-align: center;
+    height: 540px;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active { 
+    transform: translate(-50%, -50%) scale(1); 
+    transition: 0.5s all;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.header-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-popup > span {
+    color: gray;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.music {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+    font-size: 24px;
+}
+
+audio {
+    display: inline-block;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+}
+
+.music > span {
+    margin-right: 20px;
+}
