@@ -1,5 +1,3 @@
-let cost;
-
 function checkCount1() {
     if (count >= 50) {
         cost = 50;
@@ -27,7 +25,7 @@ function checkCount3() {
         cost = 200;
         sound = 3;
         soundPurchase();
-        bonus.innerHTML = "Внимание, бонуска! +1 клик в секунду!";
+        bonus.innerHTML = "Бонуска +1 клик в секунду за 200 кликов";
         upgrades.append(bonus);
         console.log('Набрано 200 кликов, купите бонуску');
         checkCount3 = () => {};
@@ -49,7 +47,7 @@ function checkCount5() {
         cost = 750;
         sound = 3;
         soundPurchase();
-        bonus.innerHTML = "Внимание, бонуска! +2 клик в секунду!";
+        bonus.innerHTML = "Бонуска +2 клик в секунду за 750 кликов";
         upgrades.append(bonus);
         console.log('Набрано 750 кликов, купите бонуску');
         checkCount5 = () => {};
@@ -71,7 +69,7 @@ function checkCount7() {
         cost = 1500;
         sound = 3;
         soundPurchase();
-        bonus.innerHTML = "Внимание, бонуска! +3 клик в секунду!";
+        bonus.innerHTML = "Бонуска +3 клик в секунду за 1500 кликов";
         upgrades.append(bonus);
         console.log('Набрано 1000 кликов, купите бафф');
         checkCount7 = () => {};
@@ -82,7 +80,7 @@ function checkCount8() {
         cost = 2000;
         sound = 3;
         soundPurchase();
-        buff.innerHTML = "Купить бафф +6 за 1000 кликов";
+        buff.innerHTML = "Купить бафф +6 за 2000 кликов";
         upgrades.append(buff);
         console.log('Набрано 1000 кликов, купите бафф');
         checkCount8 = () => {};
@@ -93,7 +91,7 @@ function checkCount9() {
         cost = 3000;
         sound = 3;
         soundPurchase();
-        bonus.innerHTML = "Внимание, бонуска! +4 клик в секунду!";
+        bonus.innerHTML = "Бонуска +4 клик в секунду за 3000 кликов";
         upgrades.append(bonus);
         console.log('Набрано 1000 кликов, купите бафф');
         checkCount9 = () => {};
@@ -104,7 +102,7 @@ function checkCount10() {
         cost = 4000;
         sound = 3;
         soundPurchase();
-        buff.innerHTML = "Купить бафф +7 за 1000 кликов";
+        buff.innerHTML = "Купить бафф +7 за 4000 кликов";
         upgrades.append(buff);
         console.log('Набрано 1000 кликов, купите бафф');
         checkCount10 = () => {};

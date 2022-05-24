@@ -18,7 +18,7 @@ buff.setAttribute('class', 'buff');
 phone.addEventListener('click', function() {
   sound = 0;
   count += newCount;
-  counter.innerHTML = `Колличество кликов: ` + count;
+  counter.innerHTML = `Count clicks: ` + count;
 
   soundPurchase();
   checkCount();
