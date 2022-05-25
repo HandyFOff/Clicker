@@ -3,62 +3,68 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
 </head>
-  <div class="wrapper">
+  <div class="wrapper default-theme">
     <header class="header">
-      <div class="logo">
-        <span>HandyClick</span>
-      </div>
-      <div class="settings open-popup">
-        <img src="assets/img/settings.png" alt="" width="55" height="55">
-      </div>
-      <div class="popup__bg"> 
-        <div class="popup">
-          <div class="header-popup">
-            <span>SETTINGS</span>
-            <div class="close-popup"></div>
-          </div>
-          <!-- <div class="sound">
-            <span>Sound:</span>
-            <div></div>
-          </div> -->
-          <div class="music">
-            <span>Music:</span>
-            <audio controls>
-              <source src="assets/music/piglins.mp3" type="audio/mp3">
-              <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-            </audio>
-          </div>
+        <div class="logo">
+            <span>HandyClick</span>
         </div>
-      </div>
-    </div>  
+        <div class="settings open-popup">
+            <img src="assets/img/settings.png" alt="" width="55" height="55">
+        </div>
+        <div class="popup__bg"> 
+            <div class="popup">
+                <div class="header-popup">
+                    <span>SETTINGS</span>
+                    <div class="close-popup"></div>
+                </div>
+                <div class="music">
+                    <span>Music:</span>
+                    <div class="music-block"></div>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="container">
-      <div class="da">
-        <div class="block_c">
-          <div class="counter">Count clicks: 0</div>
+      <div class="counters">
+        <div class="level">
+          <div class="block_level">
+            <div class="level_counter">LEVEL 1</div>
+            <progress class="level-bar" value="" max="1"></progress>
+          </div>
+        </div>
+        <div class="click_counter">
+          <div class="block_counter">
+            <div class="counter">
+              <span>CLICKS: 0</span>
+            </div>
+          </div>
         </div>
       </div>
       <img src="assets/img/phone.png" class="phone" draggable="false" alt="phone" width="330" height="600">
       <div class="info">
         <div class="info-head">
-          <span>INFO</span>
+          <span>UPGRADES</span>
         </div>
         <div class="upgrades">
+          <div class="container-info">
 
+          </div>
         </div>
-      </div>
+        </div>
+        </div>
     </div>
-  </div>
+    </div>
 
   <!-- game scripts -->
   <script src="scripts/handler.js"></script>
   <script src="scripts/game.js"></script>
   <script src="scripts/check_count.js"></script>
   <script src="scripts/sounds.js"></script>
+  <script src="scripts/theme.js"></script>
 
   <!-- DEBUG -->
   <script src="debug/debug_tool.js"></script>
-
 </body>
 </html>

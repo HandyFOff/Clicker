@@ -10,6 +10,7 @@
 
     · Click on the phone 
     · Earn clicks to buy upgrades
+    · Upgrade your level
     · Cooming soon...
 
 <-- Upgrades -->
@@ -19,11 +20,16 @@
     · +3 clicks per click : cost 150 clicks
     · +4 clicks per click : cost 500 clicks
     · +5 clicks per click : cost 1000 clicks
+    · +6 clicks per click : cost 2000 clicks
+    · +7 clicks per click : cost 4000 clicks
+
     · Cooming Soon...
 
     # PASSIVE CLICKS
     · 1 click per second : cost 200 clicks
     · 2 clicks per second : cost 750 clicks
+    · 3 clicks per second : cost 1500 clicks
+    · 4 clicks per second : cost 3000 clicks
     · Cooming Soon...
 
     # Cooming Soon...

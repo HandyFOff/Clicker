@@ -1,0 +1,23 @@
+.default-theme {
+    background-image: url('../img/theme/field.png');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.sky-theme {
+    background-image: url('../img/theme/woods.png');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.sea-theme {
+    background-image: url('../img/theme/sea.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.sun-theme {
+    background-image: url('../img/theme/sun.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}

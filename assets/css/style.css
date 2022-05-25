@@ -2,16 +2,20 @@
 
 body {
     font-family: Roboto;
-    margin: 40px 0 0 0;
     padding: 0;
     user-select: none;
-    background-image: url('https://img.freepik.com/free-vector/sky-with-clouds_1270-480.jpg?w=1380');
-    background-size: cover;
+    margin: 0;
+}
+
+.wrapper {
+    height: 929px;
+    transition: .5s ease;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 40px 0 0 0;
 }
 
 .settings {
@@ -27,6 +31,8 @@ body {
     display: inline-block;
     padding: 7px 20px;
     border-radius: 15px;
+    border: 2px solid #f9f9f9;
+    cursor: pointer;
 }
 
 .logo > span {
@@ -35,46 +41,144 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .counter {
-    font-size: 60px;
+    font-size: 33px;
     text-align: center;
-    padding: 20px 80px;
+    padding: 28px 50px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #fff;
+    text-shadow: 
+    -0   -3px 0   #000000,
+     0   -3px 0   #000000,
+    -0    3px 0   #000000,
+     0    3px 0   #000000,
+    -3px -0   0   #000000,
+     3px -0   0   #000000,
+    -3px  0   0   #000000,
+     3px  0   0   #000000,
+    -1px -3px 0   #000000,
+     1px -3px 0   #000000,
+    -1px  3px 0   #000000,
+     1px  3px 0   #000000,
+    -3px -1px 0   #000000,
+     3px -1px 0   #000000,
+    -3px  1px 0   #000000,
+     3px  1px 0   #000000,
+    -3px -3px 0   #000000,
+     3px -3px 0   #000000,
+    -3px  3px 0   #000000,
+     3px  3px 0   #000000,
+    -3px -3px 0   #000000,
+     3px -3px 0   #000000,
+    -3px  3px 0   #000000,
+     3px  3px 0   #000000;
 }
 
-.block_c {
-    background-color: #fff;
+.block_counter {
+    background-color: #ccc;
     border-radius: 15px;
+    display: inline-block;
+    border: 3px solid rgb(229, 229, 229);
+    box-shadow: #fff 0px 0px 10px;
+}
+
+.click_counter {
+    margin-bottom: 60px;
+    /* visibility: hidden; */
     display: inline-block;
 }
 
-.da {
-    text-align: center;
+.level {
     margin-bottom: 60px;
+    /* visibility: hidden; */
+    display: inline-block;
+}
+
+.block_level {
+    text-align: center;
+    padding: 10px 30px;
+    width: 510px;
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ccc;
+    border-radius: 15px;
+    display: inline-block;
+    border: 3px solid rgb(229, 229, 229);
+    box-shadow: #fff 0px 0px 10px;
+}
+
+.level_counter {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #fff;
+    text-shadow: 
+    -0   -3px 0   #000000,
+     0   -3px 0   #000000,
+    -0    3px 0   #000000,
+     0    3px 0   #000000,
+    -3px -0   0   #000000,
+     3px -0   0   #000000,
+    -3px  0   0   #000000,
+     3px  0   0   #000000,
+    -1px -3px 0   #000000,
+     1px -3px 0   #000000,
+    -1px  3px 0   #000000,
+     1px  3px 0   #000000,
+    -3px -1px 0   #000000,
+     3px -1px 0   #000000,
+    -3px  1px 0   #000000,
+     3px  1px 0   #000000,
+    -3px -3px 0   #000000,
+     3px -3px 0   #000000,
+    -3px  3px 0   #000000,
+     3px  3px 0   #000000,
+    -3px -3px 0   #000000,
+     3px -3px 0   #000000,
+    -3px  3px 0   #000000,
+     3px  3px 0   #000000;
+}
+
+.level-bar {
+    width: 450px;
+    
+}
+
+.counters {
+    display: flex;
+    justify-content: space-between;
 }
 
 .info {
     border-radius: 15px;
-    background-color: #fff;
     height: 600px;
     width: 580px;
     float: right;
     margin-right: 15px;
+    border: 3px solid #ccc;
+    overflow: hidden;
 }
 
 .info-head {
     background-color: rgb(156, 156, 156);
     height: 60px;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .info-head > span {
@@ -82,6 +186,31 @@ body {
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 8px;
+    text-shadow: 
+    -0   -2px 0   #000000,
+     0   -2px 0   #000000,
+    -0    2px 0   #000000,
+     0    2px 0   #000000,
+    -2px -0   0   #000000,
+     2px -0   0   #000000,
+    -2px  0   0   #000000,
+     2px  0   0   #000000,
+    -1px -2px 0   #000000,
+     1px -2px 0   #000000,
+    -1px  2px 0   #000000,
+     1px  2px 0   #000000,
+    -2px -1px 0   #000000,
+     2px -1px 0   #000000,
+    -2px  1px 0   #000000,
+     2px  1px 0   #000000,
+    -2px -2px 0   #000000,
+     2px -2px 0   #000000,
+    -2px  2px 0   #000000,
+     2px  2px 0   #000000,
+    -2px -2px 0   #000000,
+     2px -2px 0   #000000,
+    -2px  2px 0   #000000,
+     2px  2px 0   #000000;
 }
 
 .phone {
@@ -89,6 +218,13 @@ body {
     cursor: pointer;
     margin-left: 1.1em;
     display: inline-block;
+}
+
+.container-info {
+    max-width: 464px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 46px;
 }
 
 .info_table {
@@ -104,23 +240,85 @@ tr, td {
 }
 
 .buff {
-    font-size: 30px;
-    background-color: rgb(113, 200, 96);
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 
+    -0   -2px 0   #fff,
+     0   -2px 0   #fff,
+    -0    2px 0   #fff,
+     0    2px 0   #fff,
+    -2px -0   0   #fff,
+     2px -0   0   #fff,
+    -2px  0   0   #fff,
+     2px  0   0   #fff;
+    /* background-color: rgb(113, 200, 96); */
+    background-image: url('../img/button.png');
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    margin: 30px 0 10px 0px;
+    display: inline-block;
+    animation: 1s forwards;
+    animation-name: anio;
+    opacity: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.bonus {
+    font-size: 2.85vh;
+    font-weight: 700;
+    background-image: url('../img/bonus.png');
     border-radius: 5px;
     padding: 10px 25px;
     border: 1px solid #d6e9c6;
     margin: 20px 0;
     display: inline-block;
+    animation: 1s forwards;
+    animation-name: anio;
+    opacity: 0;
+    position: relative;
+    z-index: 3;
 }
 
 .bonus {
-    font-size: 24px;
-    background-color: rgb(203, 196, 61);
-    border-radius: 5px;
-    padding: 10px 25px;
-    border: 1px solid #d6e9c6;
-    margin: 10px 0;
-    display: inline-block;
+    color: #000;
+    text-shadow: 
+    -0   -1px 0   #ffffff,
+     0   -1px 0   #ffffff,
+    -0    1px 0   #ffffff,
+     0    1px 0   #ffffff,
+    -1px -0   0   #ffffff,
+     1px -0   0   #ffffff,
+    -1px  0   0   #ffffff,
+     1px  0   0   #ffffff,
+    -1px -1px 0   #ffffff,
+     1px -1px 0   #ffffff,
+    -1px  1px 0   #ffffff,
+     1px  1px 0   #ffffff,
+    -1px -1px 0   #ffffff,
+     1px -1px 0   #ffffff,
+    -1px  1px 0   #ffffff,
+     1px  1px 0   #ffffff,
+    -1px -1px 0   #ffffff,
+     1px -1px 0   #ffffff,
+    -1px  1px 0   #ffffff,
+     1px  1px 0   #ffffff,
+    -1px -1px 0   #ffffff,
+    -1px  1px 0   #ffffff,
+     1px  1px 0   #ffffff;
+     
+}
+
+@keyframes anio {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes anic {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 button {
@@ -138,8 +336,10 @@ button {
 }
 
 .upgrades {
+    background-image: url('../img/info.png');
     text-align: center;
     height: 540px;
+    z-index: -1;
 }
 
 .popup__bg {
@@ -216,4 +416,26 @@ audio {
 
 .music > span {
     margin-right: 20px;
+}
+
+.music-block {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pytorka {
+    top: -390px;
+    animation: slidedown 15s forwards;
+}
+
+@keyframes slidedown {
+    from {
+        top: -390px;
+    }
+
+    to {
+        top: 590px;
+    }
 }
