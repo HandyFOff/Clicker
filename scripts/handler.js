@@ -2,28 +2,27 @@ function counterClicks() {
     buff.onclick = function() {
       if ((count - cost) < 0) {
         console.log('Недостаточно средств');
-      } else {
-        function buy_close() {
-          buff.remove();
-          buff.style.cssText = `
-          animation: 1s forwards;
-          animation-name: anio;
-          opacity: 0;`;
-          setValueLevel();
-          setTimeout(() => setMaxLevel(), 2000);
-        }
-        count = count - cost;
-        exp++;
-        sound = 1;
-        soundPurchase();
-        counter.innerHTML = `CLICKS: ${count}`;
-        newCount -= 1;
-        newCount += 2;
+      }
+      count = count - cost;
+      exp++;
+      sound = 1;
+      soundPurchase();
+      counter.innerHTML = `CLICKS: ${count}`;
+      newCount -= 1;
+      newCount += 2;
+      buff.style.cssText = `
+      animation: 1s forwards;
+      animation-name: anic;
+      opacity: 1;`
+      setTimeout(() => buy_close(), 1000);
+      function buy_close() {
+        buff.remove();
         buff.style.cssText = `
         animation: 1s forwards;
-        animation-name: anic;
-        opacity: 1;`
-        setTimeout(() => buy_close(), 1000);
+        animation-name: anio;
+        opacity: 0;`;
+        setValueLevel();
+        setTimeout(() => setMaxLevel(), 1000);
       }
     }
     bonus.onclick = function() {
@@ -37,7 +36,7 @@ function counterClicks() {
           animation-name: anio;
           opacity: 0;`;
           setValueLevel();
-          setTimeout(() => setMaxLevel(), 2000);
+          setTimeout(() => setMaxLevel(), 1000);
         }
         count = count - cost;
         sound = 2;
@@ -58,7 +57,6 @@ function handlerBonus() {
     count += 1;
     counter.innerHTML = `CLICKS: ` + count;
     checkCount();
-    siteTheme();
 }
 
 function getRandomInt(min, max) {
@@ -74,11 +72,14 @@ function setValueLevel() {
 function setMaxLevel() {
   console.log('work');
   if (levelBar.value == levelBar.max) {
+    level += 1;
+    sound = 4;
     exp = 0;
     levelBar.value = 0;
     levelBar.max += 1;
-    levelCounter.innerHTML = `LEVEL ${level += 1}`;
+    levelCounter.innerHTML = `LEVEL ${level}`;
   }
+  checkTheme();
 }
 
 // Animations
@@ -106,14 +107,14 @@ function animationInfo(character) {
 let popupBg = document.querySelector('.popup__bg'); 
 let popup = document.querySelector('.popup'); 
 let openPopupButtons = document.querySelectorAll('.open-popup');
-let closePopupButton = document.querySelector('.close-popup'); 
+let closePopupButton = document.querySelector('.close-popup');
   
 openPopupButtons.forEach((button) => { 
     button.addEventListener('click', (e) => { 
         e.preventDefault(); 
         popupBg.classList.add('active');
         popup.classList.add('active'); 
-    })
+    });
 });
   
 closePopupButton.addEventListener('click',() => { 

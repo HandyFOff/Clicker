@@ -22,7 +22,6 @@
     · +5 clicks per click : cost 1000 clicks
     · +6 clicks per click : cost 2000 clicks
     · +7 clicks per click : cost 4000 clicks
-
     · Cooming Soon...
 
     # PASSIVE CLICKS
@@ -31,7 +30,7 @@
     · 3 clicks per second : cost 1500 clicks
     · 4 clicks per second : cost 3000 clicks
     · Cooming Soon...
-
+    
     # Cooming Soon...
 
 <-- Other INFO -->

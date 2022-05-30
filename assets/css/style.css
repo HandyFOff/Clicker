@@ -15,7 +15,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 0 0;
+    padding: 40px 0 20px 0;
 }
 
 .settings {
@@ -81,6 +81,7 @@ body {
 }
 
 .block_counter {
+    width: 496px;
     background-color: #ccc;
     border-radius: 15px;
     display: inline-block;
@@ -343,6 +344,7 @@ button {
 }
 
 .popup__bg {
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;

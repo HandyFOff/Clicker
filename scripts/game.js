@@ -9,6 +9,8 @@ let music = document.querySelector('.music_on');
 let volume = document.querySelector('.volume-slider');
 let levelBar = document.querySelector('.level-bar');
 let levelCounter = document.querySelector('.level_counter');
+let buff_info = document.querySelector('.buff-info');
+let bonus_info = document.querySelector('.bonus-info');
 
 // new elements
 let level = 1;
@@ -34,7 +36,6 @@ phone.addEventListener('click', function() {
   checkCount();
   counterClicks();
   animationPhone();
-  siteTheme();
   
 });
 

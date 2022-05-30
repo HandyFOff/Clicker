@@ -24,6 +24,12 @@ function soundPurchase() {
         audioBuy.src = './assets/sound/notification.mp3'; // Указываем путь к звуку "клика"
         audioBuy.volume = '0.8';
         audioBuy.play(); 
+    } else if (sound == 4) {
+        const audioLevelUp = new Audio(); // Создаём новый элемент Audio
+        audioLevelUp.preload = 'auto';
+        audioLevelUp.src = './assets/sound/levelup.mp3'; // Указываем путь к звуку "клика"
+        audioLevelUp.volume = '0.8';
+        audioLevelUp.play(); 
     }
 }
 
