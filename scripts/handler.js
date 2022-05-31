@@ -76,7 +76,7 @@ function setMaxLevel() {
     sound = 4;
     exp = 0;
     levelBar.value = 0;
-    levelBar.max += 1;
+    checkMaxLevel();
     levelCounter.innerHTML = `LEVEL ${level}`;
   }
   checkTheme();

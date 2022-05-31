@@ -1,3 +1,5 @@
+/* CHECK COUNT */
+
 function checkCount1() {
     if (count >= 50) {
         cost = 50;
@@ -121,4 +123,23 @@ function checkCount() {
     checkCount8();
     checkCount9();
     checkCount10();
+}
+
+/* CHECK LEVEL */
+function checkMaxLevel() {
+  if (level == 5) {
+    levelBar.max += 1;
+  }
+  if (level == 10) {
+    levelBar.max += 1;
+  }
+  if (level == 20) {
+    levelBar.max += 1;
+  }
+  if (level == 30) {
+    levelBar.max += 1;
+  }
+  if (level == 40) {
+    levelBar.max += 1;
+  }
 }

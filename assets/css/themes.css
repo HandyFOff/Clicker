@@ -4,20 +4,44 @@
     transition: .5s ease;
 }
 
-.sky-theme {
+.woods-theme {
     background-image: url('../img/theme/woods.png');
     background-size: cover;
     transition: .5s ease;
 }
 
-.sea-theme {
-    background-image: url('../img/theme/sea.jpg');
+.mountains-theme {
+    background-image: url('../img/theme/mountains.jpg');
     background-size: cover;
     transition: .5s ease;
 }
 
-.sun-theme {
-    background-image: url('../img/theme/sun.jpg');
+.taiga-theme {
+    background-image: url('../img/theme/taiga.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.oak-woods {
+    background-image: url('../img/theme/oak_woods.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.dark-woods {
+    background-image: url('../img/theme/dark_woods.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.scary-woods {
+    background-image: url('../img/theme/scary_woods.jpg');
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.green-woods {
+    background-image: url('../img/theme/green_woods.jpg');
     background-size: cover;
     transition: .5s ease;
 }
